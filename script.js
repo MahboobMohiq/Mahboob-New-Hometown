@@ -21,7 +21,7 @@ function randomMember(arr) {
 }
 
 
-facilitatorName = ['Oxford University', 'Swansea University ', 'London Univeristy', 'Manchester University', 'Bristol Univeristy', 'Cardiff University'];
+facilitatorName = ['Ahmad', 'John', 'Smith', 'Ebraham', 'Anwari', 'Elizabeth'];
 Item = [null];
 
 
