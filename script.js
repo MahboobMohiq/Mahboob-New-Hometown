@@ -1,76 +1,48 @@
-function learnMore(section) {
-    alert("You are learning more about " + section + "!");
+var facilitatorName, Item;
+
+function convertToNumber(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return 0
+  } else {
+    return number_value
+  }
 }
 
-// Optional: Smooth scrolling effect for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-// Array to store facilitator names
-let facilitators = [];
-
-// Function to generate a random integer
 function randomInt(n) {
-    return Math.floor(Math.random() * n);
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
 }
 
-// Function to get a random member from an array
 function randomMember(arr) {
-    return arr[randomInt(arr.length)];
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
 }
 
-// Function to update the facilitator list in the UI
-function updateFacilitatorList() {
-    const listElement = document.getElementById('facilitator-list');
-    listElement.innerHTML = ''; // Clear the existing list
 
-    facilitators.forEach((name, index) => {
-        const listItem = document.createElement('li');
-        listItem.textContent = name;
+facilitatorName = ['Oxford University', 'Swansea University ', 'London Univeristy', 'Manchester University', 'Bristol Univeristy', 'Cardiff University'];
+Item = [null];
 
-        // Add a delete button for each facilitator
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.className = 'delete-btn';
 
-        // Add event listener to delete button
-        deleteButton.addEventListener('click', () => {
-            facilitators.splice(index, 1); // Remove the item from the array
-            updateFacilitatorList(); // Update the UI
-        });
+document.getElementById('addFacilitatorButton').addEventListener('click', (event) => {
+  let element_facilitatorList = document.getElementById('facilitatorList');
+  let new_span = document.createElement('span');
+  let element_facilitatorName = document.getElementById('facilitatorName');
+  element_facilitatorName.innerText = document.getElementById('facilitatorInput').value;
 
-        listItem.appendChild(deleteButton); // Append the delete button to the list item
-        listElement.appendChild(listItem); // Append the list item to the list
-    });
-}
+  element_facilitatorList.appendChild(new_span);
+  facilitatorName.unshift(document.getElementById('facilitatorInput').value);
 
-// Handle "Add New Facilitator" button click
-document.getElementById('add-facilitator-btn').addEventListener('click', function () {
-    const inputElement = document.getElementById('facilitator-input');
-    const name = inputElement.value.trim();
-
-    if (name) {
-        facilitators.push(name); // Add the name to the array
-        inputElement.value = ''; // Clear the input field
-        updateFacilitatorList(); // Update the list in the UI
-    } else {
-        alert('Please enter a name before adding.');
-    }
 });
 
-// Handle "Select Random Facilitator" button click
-document.getElementById('select-facilitator-btn').addEventListener('click', function () {
-    if (facilitators.length > 0) {
-        const randomFacilitator = randomMember(facilitators);
-        document.getElementById('friend').textContent = randomFacilitator;
-    } else {
-        alert('No facilitators added yet. Please add some first.');
-    }
-});
+document.getElementById('selectFacilitatorButton').addEventListener('click', (event) => {
+  let element_facilitatorList2 = document.getElementById('facilitatorList');
+  element_facilitatorList2.innerText = randomMember(facilitatorName);
+  let element_list = document.getElementById('list');
+  let new_li = document.createElement('li');
+  new_li.innerText = randomMember(facilitatorName);
 
+  element_list.appendChild(new_li);
+
+});
