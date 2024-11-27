@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto; /* Center horizontally with margin */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#friend-display {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 20px 0;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9f5ff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+header {
+    background: url('header-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hometown-section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.facts-section {
+    background: #e9ecef;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items, you can adjust as needed */
+    margin: 0 auto; /* Center the entire gallery section horizontally */
+}
+
+.gallery-item {
+    width: calc(50% - 20px); /* Set width to 50% minus margin for two items per row */
+    text-align: center; /* Center text and images inside the item */
+}
+
+.gallery-item img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+    display: block; /* Ensures images are block level to center */
+    margin: 0 auto; /* Center the image inside the item */
+}
+.contact-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Style for the input field */
+input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the facilitator list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #e9f5ff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+}
+
+/* Style for the selected facilitator section */
+#selected-facilitator {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#friend {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+/* Style for the delete button */
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}

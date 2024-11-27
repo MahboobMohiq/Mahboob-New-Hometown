@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Herat, Afghanistan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-overlay">
+            <h1>Discover Herat, Afghanistan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#city-overview">City Overview</a></li>
+                    <li><a href="#historical-sites">Historical Sites</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="city-overview" class="hometown-section">
+        <h2>Explore Herat</h2>
+        <p>Herat, known as the jewel of the East, boasts a rich history that dates back thousands of years. The city is famous for its stunning architecture, vibrant bazaars, and the warmth of its people. From the iconic Herat Citadel to the serene Herat Mosque, every corner tells a story.</p>
+        <button onclick="learnMore('Herat')">Learn More</button>
+    </section>
+
+    <section id="historical-sites" class="hometown-section">
+        <h2>Historical Sites</h2>
+        <p>Herat is home to numerous historical landmarks. The Herat Citadel, also known as the Citadel of Alexander, is a UNESCO World Heritage site that has stood for centuries. Other notable sites include the Friday Mosque, known for its intricate tile work, and the Mausoleum of Goharshad.</p>
+        <button onclick="learnMore('Historical Sites')">Learn More</button>
+    </section>
+
+    <section id="culture" class="facts-section">
+        <h2>Culture</h2>
+        <div class="facts-container">
+            <div class="fact-item">
+                <h3>Did You Know?</h3>
+                <p>Herat is famous for its traditional crafts, especially carpets and pottery, which are sought after both locally and internationally.</p>
+            </div>
+            <div class="fact-item">
+                <h3>FAQ: What is the best time to visit?</h3>
+                <p>The best time to visit Herat is during spring (March to May) and autumn (September to November) when the weather is pleasant.</p>
+            </div>
+            <div class="fact-item">
+                <h3>What to taste?</h3>
+                <p>Don't miss trying Herati cuisine, especially dishes like Qabuli Pulao and Sheer Korma, which reflect the region's rich culinary heritage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Local Highlights</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="herat-citadel.jpg" alt="Herat Citadel">
+                <p>The magnificent Herat Citadel.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="friday-mosque.jpg" alt="Friday Mosque">
+                <p>The beautiful tile work of the Friday Mosque.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="herat-market.jpg" alt="Herat Bazaar">
+                <p>The vibrant bazaars of Herat.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="herati-food.jpg" alt="Herati Cuisine">
+                <p>Delicious traditional Herati dishes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+<input type="text" id="facilitator-input" placeholder="Enter facilitator name">
+<button id="add-facilitator-btn">Add New Facilitator</button>
+
+<ul id="facilitator-list"></ul>
+
+<button id="select-facilitator-btn">Select Random Facilitator</button>
+
+<div id="selected-facilitator">Selected Facilitator: <span id="friend">None</span></div>
+
+
+   
+    <footer>
+        <p>2024 Discover Herat, Afghanistan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
